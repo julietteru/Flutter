@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="df0568f8-ea9d-4acb-bcf5-41cb2605a44e" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[]" />
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Dart File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="1rGjupdKXCz3pb4rlr4U29ZErI2" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="false" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="dart.analysis.tool.window.force.activate" value="true" />
+    <property name="dart.analysis.tool.window.visible" value="false" />
+    <property name="io.flutter.reload.alreadyRun" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="show.migrate.to.gradle.popup" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Usuario\Desktop\Julie\Projects\Flutter\Codelabs\testing_codelab\lib\models" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Flutter.main.dart">
+    <configuration name="Testing Remove Button" type="FlutterTestConfigType" factoryName="Flutter Test" temporary="true" nameIsGenerated="true">
+      <option name="testName" value="Testing Remove Button" />
+      <option name="testFile" value="$PROJECT_DIR$/test/favorites_test.dart" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Flutter Test.Testing Remove Button" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="df0568f8-ea9d-4acb-bcf5-41cb2605a44e" name="Default Changelist" comment="" />
+      <created>1618609545102</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1618609545102</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="93" y="93" width="1350" height="648" key="AVDManager" timestamp="1618673913430">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="93" y="93" width="1350" height="648" key="AVDManager/0.0.1536.834@0.0.1536.834" timestamp="1618673913430" />
+    <state x="549" y="171" key="FileChooserDialogImpl" timestamp="1619360727756">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="549" y="171" key="FileChooserDialogImpl/0.0.1536.834@0.0.1536.834" timestamp="1619360727756" />
+    <state width="1491" height="333" key="GridCell.Tab.0.bottom" timestamp="1618716265426">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1491" height="333" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1618716265426" />
+    <state width="1491" height="333" key="GridCell.Tab.0.center" timestamp="1618716265426">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1491" height="333" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1618716265426" />
+    <state width="1491" height="333" key="GridCell.Tab.0.left" timestamp="1618716265425">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1491" height="333" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1618716265425" />
+    <state width="1491" height="333" key="GridCell.Tab.0.right" timestamp="1618716265426">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1491" height="333" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1618716265426" />
+  </component>
+</project>
