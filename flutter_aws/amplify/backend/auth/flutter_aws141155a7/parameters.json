@@ -1,0 +1,6 @@
+{
+  "authSelections": "userPoolOnly",
+  "resourceName": "flutter_aws141155a7",
+  "serviceType": "imported",
+  "region": "us-east-2"
+}

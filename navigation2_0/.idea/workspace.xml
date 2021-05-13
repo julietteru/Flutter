@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="f75d93d2-df4a-43c9-a7f3-2e015810c4ea" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/lib/screens/option1Screen.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/sideNav.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/appShell.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/appShell.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/bookAppState.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/bookAppState.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/routing/bookRouterDelegate.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/routing/bookRouterDelegate.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/routing/innerRouterDelegate.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/routing/innerRouterDelegate.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/routing/paths.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/routing/paths.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/routing/routeInformationParser.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/routing/routeInformationParser.dart" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[Pixel_3_XL_API_30]" />
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Dart File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1sIkIG2hoZ1FlNb7hPmFRnNngP1" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="false" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="dart.analysis.tool.window.force.activate" value="true" />
+    <property name="dart.analysis.tool.window.visible" value="false" />
+    <property name="io.flutter.reload.alreadyRun" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../Tesis/Repositorios/one-mobile/one" />
+    <property name="show.migrate.to.gradle.popup" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f75d93d2-df4a-43c9-a7f3-2e015810c4ea" name="Default Changelist" comment="" />
+      <created>1620567409997</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1620567409997</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="93" y="93" width="1350" height="648" key="AVDManager" timestamp="1620591652164">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="93" y="93" width="1350" height="648" key="AVDManager/0.0.1536.834@0.0.1536.834" timestamp="1620591652164" />
+    <state x="549" y="172" key="FileChooserDialogImpl" timestamp="1620598348257">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="549" y="172" key="FileChooserDialogImpl/0.0.1536.834@0.0.1536.834" timestamp="1620598348257" />
+    <state width="1476" height="210" key="GridCell.Tab.0.bottom" timestamp="1620598348634">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1476" height="210" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1620598348634" />
+    <state width="1476" height="210" key="GridCell.Tab.0.center" timestamp="1620598348634">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1476" height="210" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1620598348634" />
+    <state width="1476" height="210" key="GridCell.Tab.0.left" timestamp="1620598348634">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1476" height="210" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1620598348634" />
+    <state width="1476" height="210" key="GridCell.Tab.0.right" timestamp="1620598348634">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1476" height="210" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1620598348634" />
+    <state x="431" y="155" width="672" height="678" key="search.everywhere.popup" timestamp="1620573147183">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="431" y="155" width="672" height="678" key="search.everywhere.popup/0.0.1536.834@0.0.1536.834" timestamp="1620573147183" />
+  </component>
+</project>
