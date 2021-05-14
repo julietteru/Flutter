@@ -135,7 +135,7 @@ class CreateAccountScreenState extends State<CreateAccountScreen> {
                     }
                   }
                 },
-                child: Text("Login"))
+                child: Text("Create"))
           ],
         ),
       ),
