@@ -28,6 +28,17 @@ class Cognito {
     return response.isSignUpComplete;
   }
 
+  Future<bool> signIn(String username, String password) async {
+    var response = await _configuration.auth
+        .signIn(
+            request: SignInRequest(
+                username: username,
+                password: password,
+                options: CognitoSignInOptions()))
+        .onError((error, stackTrace) => _handleErrors(error, stackTrace));
+    return response.isSignedIn;
+  }
+
   _handleErrors(error, stackTrace) {
     print(error);
     print(stackTrace);

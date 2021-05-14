@@ -4,6 +4,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_aws/helpers/custom_icons_icons.dart';
 import 'package:flutter_aws/helpers/routeBuilder.dart';
 import 'package:flutter_aws/screens/createAccount.dart';
+import 'package:flutter_aws/screens/home.dart';
+import 'package:flutter_aws/services/cognito.dart';
 
 class LoginScreen extends StatefulWidget {
   @override
@@ -12,6 +14,16 @@ class LoginScreen extends StatefulWidget {
 
 class LoginScreenState extends State<LoginScreen> {
   final GlobalKey<FormState> _formKey = new GlobalKey<FormState>();
+  final userNameController = TextEditingController();
+  final passwordController = TextEditingController();
+  final Cognito _auth = Cognito();
+
+  @override
+  void dispose() {
+    userNameController.dispose();
+    passwordController.dispose();
+    super.dispose();
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -41,6 +53,7 @@ class LoginScreenState extends State<LoginScreen> {
                 height: 20,
               ),
               TextFormField(
+                controller: userNameController,
                 decoration: InputDecoration(
                   labelText: "Username",
                 ),
@@ -48,7 +61,7 @@ class LoginScreenState extends State<LoginScreen> {
                   if (value == null || value.isEmpty) {
                     return "Must enter an username";
                   }
-                  return "";
+                  return null;
                 },
                 keyboardType: TextInputType.emailAddress,
               ),
@@ -56,6 +69,7 @@ class LoginScreenState extends State<LoginScreen> {
                 height: 20,
               ),
               TextFormField(
+                controller: passwordController,
                 decoration: InputDecoration(
                   labelText: "Password",
                 ),
@@ -63,7 +77,7 @@ class LoginScreenState extends State<LoginScreen> {
                   if (value == null || value.isEmpty) {
                     return "Must enter a password";
                   }
-                  return "";
+                  return null;
                 },
                 obscureText: true,
                 keyboardType: TextInputType.visiblePassword,
@@ -72,10 +86,15 @@ class LoginScreenState extends State<LoginScreen> {
                 height: 20,
               ),
               ElevatedButton(
-                  onPressed: () {
+                  onPressed: () async {
                     var isValid = _formKey.currentState.validate();
                     if (isValid != null && isValid) {
-                      //To do: call cognito and login
+                      var username = userNameController.text;
+                      var password = passwordController.text;
+                      var wasSuccessful = await _auth.signIn(username, password);
+                      if (wasSuccessful) {
+                        Navigator.of(context).push(createRoute(Home()));
+                      }
                     }
                   },
                   child: Text("Login")),
