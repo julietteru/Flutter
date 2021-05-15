@@ -1,9 +1,14 @@
+import 'dart:io';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_aws/screens/loginPage.dart';
 import 'package:flutter_aws/helpers/themeBuilder.dart';
 import 'package:flutter_aws/services/awsConfiguration.dart';
 
+import 'helpers/devHttpOverrides.dart';
+
 void main() {
+  HttpOverrides.global = new DevHttpOverrides();
   runApp(AWSDemo());
 }
 

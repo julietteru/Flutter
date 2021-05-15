@@ -1,4 +1,5 @@
 import 'package:amplify_auth_cognito/amplify_auth_cognito.dart';
+import 'package:amplify_flutter/amplify.dart';
 import 'package:flutter_aws/models/user.dart';
 import 'package:flutter_aws/services/awsConfiguration.dart';
 
@@ -39,7 +40,18 @@ class Cognito {
     return response.isSignedIn;
   }
 
-  _handleErrors(error, stackTrace) {
+ static fetchAuthSession() async {
+    CognitoAuthSession response = await Amplify.Auth.fetchAuthSession(
+        options: CognitoSessionOptions(getAWSCredentials: true)).onError((error, stackTrace) => _handleErrors(
+        error, stackTrace));
+    return response;
+  }
+
+  signOut(){
+    Amplify.Auth.signOut().onError((error, stackTrace) => _handleErrors(error, stackTrace));
+  }
+
+  static _handleErrors(error, stackTrace) {
     print(error);
     print(stackTrace);
   }

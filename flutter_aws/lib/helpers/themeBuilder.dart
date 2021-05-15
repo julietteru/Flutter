@@ -15,6 +15,8 @@ class ThemeBuilder {
   static ThemeData build(BuildContext context) {
     var base = Theme.of(context);
     return base.copyWith(
+        canvasColor: ThemeColors.primaryVariant,
+        bottomAppBarColor: ThemeColors.accent,
         appBarTheme: base.appBarTheme.copyWith(
             iconTheme: IconThemeData(color: ThemeColors.text), elevation: 0),
         primaryColor: ThemeColors.primary,
@@ -57,7 +59,9 @@ class ThemeBuilder {
             fontSize: 15,
             fontStyle: FontStyle.italic,
           ),
-        ));
+        ),
+
+    );
   }
 
   static TextTheme _buildPrimaryTextTheme(TextTheme base) {
