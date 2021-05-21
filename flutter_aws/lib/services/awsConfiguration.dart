@@ -1,12 +1,10 @@
-import 'package:amplify_api/amplify_api.dart';
 import 'package:amplify_auth_cognito/amplify_auth_cognito.dart';
 import 'package:amplify_flutter/amplify.dart';
 
-import '../amplifyconfiguration.dart';
+import 'cognito.dart';
 
 class AWSConfiguration {
   final AmplifyAuthCognito auth = new AmplifyAuthCognito();
-  final AmplifyAPI amplifyApi = new AmplifyAPI();
 
   factory AWSConfiguration() {
     return _instance;
@@ -16,12 +14,13 @@ class AWSConfiguration {
 
   AWSConfiguration._internal() {
     _initializeAWS();
+    Cognito.listenForAuthEvents();
   }
 
   _initializeAWS() async {
     try {
-      await Amplify.addPlugins([amplifyApi, auth]);
-      await Amplify.configure(amplifyconfig);
+      await Amplify.addPlugin(auth);
+      await Amplify.configure("");
     } catch (e) {
       print(e);
     }

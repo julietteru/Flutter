@@ -6,6 +6,26 @@ import 'package:flutter_aws/services/awsConfiguration.dart';
 class Cognito {
   final AWSConfiguration _configuration = AWSConfiguration();
 
+  static listenForAuthEvents(){
+    Amplify.Hub.listen([HubChannel.Auth], (hubEvent) {
+      switch(hubEvent.eventName) {
+        case "SIGNED_IN": {
+          print("USER IS SIGNED IN");
+        }
+        break;
+        case "SIGNED_OUT": {
+          print("USER IS SIGNED OUT");
+        }
+        break;
+        case "SESSION_EXPIRED": {
+          print("USER IS SIGNED IN");
+          //fetchAuthSession();
+        }
+        break;
+      }
+    });
+  }
+
   Future<bool> signUp(User user) async {
     var signUpResponse = await _configuration.auth
         .signUp(
@@ -45,6 +65,12 @@ class Cognito {
         options: CognitoSessionOptions(getAWSCredentials: true)).onError((error, stackTrace) => _handleErrors(
         error, stackTrace));
     return response;
+  }
+
+   fetchUserAttributes() async {
+      var attributes = await _configuration.auth.fetchUserAttributes();
+      var group = attributes.firstWhere((element) => element.userAttributeKey == 'group');
+      print(group.value);
   }
 
   signOut(){

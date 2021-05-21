@@ -87,12 +87,14 @@ class LoginScreenState extends State<LoginScreen> {
               ),
               ElevatedButton(
                   onPressed: () async {
+                    await _auth.signOut();
                     var isValid = _formKey.currentState.validate();
                     if (isValid != null && isValid) {
                       var username = userNameController.text;
                       var password = passwordController.text;
                       var wasSuccessful = await _auth.signIn(username, password);
                       if (wasSuccessful) {
+                        await _auth.fetchUserAttributes();
                         Navigator.of(context).push(createRoute(Home()));
                       }
                     }

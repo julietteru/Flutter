@@ -7,7 +7,7 @@ import 'package:flutter_aws/screens/loginPage.dart';
 import 'package:flutter_aws/services/cognito.dart';
 
 class DrawerContent extends StatelessWidget {
-  Cognito _auth = Cognito();
+  final Cognito _auth = Cognito();
 
   @override
   Widget build(BuildContext context) {
